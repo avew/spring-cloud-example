@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: prod
+  data:
+    mongodb:
+      host: localhost
+      database: resto
+      port: 27017
+      username: root
+      password: ahahah
