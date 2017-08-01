@@ -8,3 +8,5 @@ spring:
       port: 27017
 server:
   port: 8000
+  servlet:
+    context-path: /api/accounts

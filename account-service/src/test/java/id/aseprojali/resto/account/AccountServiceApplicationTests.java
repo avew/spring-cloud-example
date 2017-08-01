@@ -1,4 +1,4 @@
-package id.aseprojali.resto.accountservice;
+package id.aseprojali.resto.account;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
