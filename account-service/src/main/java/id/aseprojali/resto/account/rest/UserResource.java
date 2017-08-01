@@ -15,14 +15,13 @@ import java.util.Optional;
  * Created by avew on 8/1/17.
  */
 @RestController
-@RequestMapping("/api")
 public class UserResource {
 
     @Autowired
     private UserService userService;
 
     @RequestMapping(
-            value = "/account",
+            path = "/",
             method = RequestMethod.POST,
             produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.APPLICATION_JSON_VALUE)
@@ -32,7 +31,7 @@ public class UserResource {
     }
 
     @RequestMapping(
-            value = "/account",
+            path = "/",
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.APPLICATION_JSON_VALUE)

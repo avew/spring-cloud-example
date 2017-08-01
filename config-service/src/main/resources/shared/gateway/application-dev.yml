@@ -1,0 +1,29 @@
+server:
+  port: 4000
+spring:
+  profiles:
+    active: dev
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+
+zuul:
+  ignored-services: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+  routes:
+    account-service:
+        path: /api/accounts/**
+        serviceId: account-service
+management:
+  security:
+    enabled: false
