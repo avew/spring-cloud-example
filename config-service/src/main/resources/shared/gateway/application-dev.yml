@@ -16,13 +16,13 @@ ribbon:
   ConnectTimeout: 20000
 
 zuul:
-  ignored-services: '*'
+  prefix: /api
   host:
     connect-timeout-millis: 20000
     socket-timeout-millis: 20000
   routes:
-    account-service:
-        path: /api/accounts/**
+    account:
+        path: /account/**
         serviceId: account-service
 management:
   security:

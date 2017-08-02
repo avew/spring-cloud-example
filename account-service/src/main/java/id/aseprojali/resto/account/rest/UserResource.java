@@ -21,7 +21,7 @@ public class UserResource {
     private UserService userService;
 
     @RequestMapping(
-            path = "/",
+            value = "/",
             method = RequestMethod.POST,
             produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.APPLICATION_JSON_VALUE)
@@ -31,7 +31,7 @@ public class UserResource {
     }
 
     @RequestMapping(
-            path = "/",
+            value = "/email",
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.APPLICATION_JSON_VALUE)
