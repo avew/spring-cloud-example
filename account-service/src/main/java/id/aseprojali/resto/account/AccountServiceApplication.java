@@ -72,7 +72,7 @@ public class AccountServiceApplication {
                         "Documentation automatically generated",
                         model.getVersion(),
                         null,
-                        new Contact("Asep Rojali", "aseprojali.id", "aseprojali@gmail.com"),
+                        new Contact("Asep Rojali", "aseprojali.id", "aseprojali`@gmail.com"),
                         null,
                         null));
     }
