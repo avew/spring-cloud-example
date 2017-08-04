@@ -3,6 +3,7 @@ server:
 spring:
   profiles:
     active: dev
+
 hystrix:
   command:
     default:
@@ -24,6 +25,7 @@ zuul:
     account:
         path: /account/**
         serviceId: account-service
+
 management:
   security:
     enabled: false
