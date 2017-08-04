@@ -1,3 +1,5 @@
+server:
+  port: 8888
 spring:
   application:
     name: config-service
@@ -8,5 +10,9 @@ spring:
           search-locations: classpath:/shared/{application}
   profiles:
      active: native
-server:
-  port: 8888
+eureka:
+  client:
+    region: default
+    registry-fetch-interval-seconds: 5
+    serviceUrl:
+          defaultZone: http://localhost:8761/eureka/

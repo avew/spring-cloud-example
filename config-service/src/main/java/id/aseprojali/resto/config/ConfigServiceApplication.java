@@ -6,6 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.config.server.EnableConfigServer;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.core.env.Environment;
 
 import java.net.InetAddress;
@@ -13,7 +14,7 @@ import java.net.UnknownHostException;
 
 @SpringBootApplication
 @EnableConfigServer
-@EnableDiscoveryClient
+@EnableEurekaClient
 public class ConfigServiceApplication {
 
     private static final Logger log = LoggerFactory.getLogger(ConfigServiceApplication.class);
